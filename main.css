@@ -83,7 +83,6 @@
   height: 150px;
   border-radius: 50%;  
   padding: 5px;
-  border: 3px solid red;
 }
 
 .hero__user__info {
@@ -122,9 +121,25 @@ ul {
   padding: 12px;
 }
 
+.main__item:hover .item__wrap{
+  display: block;
+}
+.main__item:hover .main__btnpart button{
+  display: block;
+}
+
 .item__box {
   width: 300px;
   height: 300px;
+}
+
+.item__wrap {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  background-color: #000;
+  opacity: 0.2;
+  display: none;
 }
 
 .main__img {
@@ -134,10 +149,116 @@ ul {
 }
 
 .main__desc {
-  border: 2px solid red;
 }
 
 .main__btnpart {
+  display: flex;
   position: absolute;
   top: 50%;
+  left: 80%;
+}
+
+.main__btnpart .bx {
+  color: #fff;
+  font-size: 20px;
+}
+
+.main__btnpart button {
+  border: none;
+  background-color: transparent;
+  margin-left: 20px;
+  display: none;
+}
+
+.btn-close {
+  position: absolute;
+  top: 0%;
+  right: -50%;
+}
+
+.modal-content{  
+  width: 90% !important;
+}
+
+.modal__headerr {
+  display: flex !important;
+  justify-content: start;
+}
+
+.modal-dialog {
+  max-width: 1150px;
+
+}
+
+.modal__left {
+  width: 40vw;
+  height: 655px;
+  object-fit: cover;
+}
+
+
+.m_ali {
+  width:40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.modalright {
+  position: relative;
+}
+
+.modal__right-img {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.user__name {
+  margin-top: 20px;
+  margin-left: 30px;
+}
+
+.comment {
+  margin: 20px 0 20px 30px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.plus {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.main__modal {
+  overflow-y: scroll;
+  height: 500px;
+
+}
+.main__modal::-webkit-scrollbar{
+  width: 0;
+}
+
+.main__btn-list {
+  display: flex;
+}
+
+.main__btn-list li {
+  list-style-type: none;
+}
+
+.main__btn-list button {
+  background-color: transparent;
+  border: none;
+}
+
+.bxs-heart {
+  color: red;
+}
+
+.user__name a {
+  color: #000;
+  text-decoration: none;
+  opacity: 0.5;
+  font-size: 16px;
 }

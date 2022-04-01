@@ -14,15 +14,15 @@ const instagramContentBox = [
   },
   {
     id: 2,
-    media: "/img/img1.jpg",
+    media: "/img/video1.mp4",
     desc: `Yuksalish liderlar akademiyasi kundan kunga xalqimizning mehri va e'tiboriga sazovor bo'layotganini ko'rib ko'zimiz quvonadi.
     Yuksalish jamoasida yelkama-yelka xizmat qilayotgan 200 dan ortiq qadrli insonlar, filiallarimizda o'qiyotgan va bitirib chiqqan yigit-qizlar hamda ularning ota-onalariga minnatdorchiligimizni bildiramiz.
     Sadullaev Alisher , Temurbek Adhamov, Jakhongir Pulatov, Абдусаттор Абдураҳимов, Abdusamad Muminov kabi samimiy do'stlarimizga doim qo'llab-quvvatlaganliklari uchun tashakkur izhor qilamiz.
     Ehtirom ila
     Muhammadali Eshonqulov
     `,
-    like: 152,
-    comment: 15,
+    like: 452,
+    comment: 45,
     save: false,
   },
   {
@@ -34,8 +34,8 @@ const instagramContentBox = [
     Ehtirom ila
     Muhammadali Eshonqulov
     `,
-    like: 152,
-    comment: 15,
+    like: 558,
+    comment: 154,
     save: false,
   },
   {
@@ -47,8 +47,8 @@ const instagramContentBox = [
     Ehtirom ila
     Muhammadali Eshonqulov
     `,
-    like: 152,
-    comment: 15,
+    like: 882,
+    comment: 254,
     save: false,
   },
   {
@@ -60,8 +60,8 @@ const instagramContentBox = [
     Ehtirom ila
     Muhammadali Eshonqulov
     `,
-    like: 152,
-    comment: 15,
+    like: 552,
+    comment: 154,
     save: false,
   },
   {
@@ -73,21 +73,21 @@ const instagramContentBox = [
     Ehtirom ila
     Muhammadali Eshonqulov
     `,
-    like: 152,
-    comment: 15,
+    like: 952,
+    comment: 105,
     save: false,
   },
   {
     id: 7,
-    media: "/img/img6.jpg",
+    media: "img/img77.jpg",
     desc: `Yuksalish liderlar akademiyasi kundan kunga xalqimizning mehri va e'tiboriga sazovor bo'layotganini ko'rib ko'zimiz quvonadi.
     Yuksalish jamoasida yelkama-yelka xizmat qilayotgan 200 dan ortiq qadrli insonlar, filiallarimizda o'qiyotgan va bitirib chiqqan yigit-qizlar hamda ularning ota-onalariga minnatdorchiligimizni bildiramiz.
     Sadullaev Alisher , Temurbek Adhamov, Jakhongir Pulatov, Абдусаттор Абдураҳимов, Abdusamad Muminov kabi samimiy do'stlarimizga doim qo'llab-quvvatlaganliklari uchun tashakkur izhor qilamiz.
     Ehtirom ila
     Muhammadali Eshonqulov
     `,
-    like: 152,
-    comment: 15,
+    like: 172,
+    comment: 145,
     save: false,
   },
   {
@@ -99,8 +99,8 @@ const instagramContentBox = [
     Ehtirom ila
     Muhammadali Eshonqulov
     `,
-    like: 152,
-    comment: 15,
+    like: 192,
+    comment: 153,
     save: false,
   },
   {
@@ -112,8 +112,8 @@ const instagramContentBox = [
     Ehtirom ila
     Muhammadali Eshonqulov
     `,
-    like: 152,
-    comment: 15,
+    like: 1452,
+    comment: 150,
     save: false,
   },
 
