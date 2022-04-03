@@ -14,7 +14,7 @@ const instagramContentBox = [
   },
   {
     id: 2,
-    media: "/img/video1.mp4",
+    media: "/img/vidoe1.mp4",
     desc: `Yuksalish liderlar akademiyasi kundan kunga xalqimizning mehri va e'tiboriga sazovor bo'layotganini ko'rib ko'zimiz quvonadi.
     Yuksalish jamoasida yelkama-yelka xizmat qilayotgan 200 dan ortiq qadrli insonlar, filiallarimizda o'qiyotgan va bitirib chiqqan yigit-qizlar hamda ularning ota-onalariga minnatdorchiligimizni bildiramiz.
     Sadullaev Alisher , Temurbek Adhamov, Jakhongir Pulatov, Абдусаттор Абдураҳимов, Abdusamad Muminov kabi samimiy do'stlarimizga doim qo'llab-quvvatlaganliklari uchun tashakkur izhor qilamiz.

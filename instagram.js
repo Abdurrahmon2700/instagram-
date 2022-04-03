@@ -20,7 +20,6 @@ likebtn.addEventListener('click',(e) => {
   })
   count++
   
-  // likebtn.style.background = "red"
 })
 
 
@@ -30,7 +29,7 @@ instagramContentBox.forEach(function(instagramContentBox) {
       <li class="main__item col-lg-4 col-md-4 col-sm-4">
       <div class="item__box">
       <button class="item__wrap" data-bs-toggle="modal" href="#exampleModalToggle" role="button"></button>
-        <img class="main__img" src="${instagramContentBox.media} " alt="">
+        <object class="main__img" data="${instagramContentBox.media}">1</object>
         <div class="main__btnpart">
         <button><i class='bx bxs-heart'>${instagramContentBox.like}</i></button>
         <button><i class='bx bxs-message-rounded-dots'>${instagramContentBox.comment}</i></button>
@@ -44,24 +43,12 @@ let modalLeft = document.querySelector ('.modal__left')
 let modalRight = document.querySelector ('.modalright')
 function buttons () {
   let modalView = document.querySelectorAll('.item__wrap')
-  instagramContentBox.forEach((item) => {
-    console.log(item);
-    if (item.media[0].includes('.mp4')) {
-      // item.addEventListener('click', (e)=> {
-      //   let id = e.target.id
-      //   let modalid = instagramContentBox.filter(e => e.id =! id) 
-      //   console.log(modalid);
-      //   modalLeft.src = modalid[0].media
-      // })
-    }
-  })
+ 
   for (let i = 0; i < modalView.length; i++){
-    
     modalView[i].addEventListener('click', (e)=> {
       let id = e.target.id
       let modalid = instagramContentBox.filter(e => e.id =! id) 
-      console.log(modalid);
-      modalLeft.src = modalid[i].media
+      modalLeft.data = modalid[i].media
     })
   }
 }
@@ -69,75 +56,75 @@ buttons()
 
 
 
-// let div = document.createElement('div')
-// div.innerHTML = `<div class="user__name">
-// <img class="modal__right-img" src="img/imgborde.jpg" alt="">
-// <span>muhammadali_eshonqulov</span>
-// </div>
-// <div class="main__modal">
-// <div class="user__name">
-//   <img class="modal__right-img" src="img/imgborde.jpg" alt="">
-//   <span>muhammadali_eshonqulov</span>
-//   <p class="comment">"Yuksalish" Madinai Munavvarada😊😊😊
+let div = document.createElement('div')
+div.innerHTML = `<div class="user__name">
+<img class="modal__right-img" src="img/imgborde.jpg" alt="">
+<span>muhammadali_eshonqulov</span>
+</div>
+<div class="main__modal">
+<div class="user__name">
+  <img class="modal__right-img" src="img/imgborde.jpg" alt="">
+  <span>muhammadali_eshonqulov</span>
+  <p class="comment">"Yuksalish" Madinai Munavvarada😊😊😊
 
-//     ROBBIM barchamizni tez fursatlarda shu go'zal shaharga yetkazsin.
+    ROBBIM barchamizni tez fursatlarda shu go'zal shaharga yetkazsin.
     
-//     Rasm uchun @ibrohim_muhammad_84 akamga tashakkur izhor qilaman.
-//     <a href="https://www.instagram.com/Yuksalish_leaders_academy/">@Yuksalish_Leaders_Academy
-//     </a>
-//   </p>
-// </div>
-// <div class="plus"><i class='bx bx-plus-circle' ></i></div>
-// <div class="user__name">
-//   <img class="modal__right-img" src="img/zabar.jpg" alt="">
-//   <span>zabardastovna</span>
-// </div>
-// <div class="user__name">
-//   <img class="modal__right-img" src="img/sattor.jpg" alt="">
-//   <span>abdusattor_ibroximov</span>
-// </div>
-// <div class="user__name">
-//   <img class="modal__right-img" src="img/bilol.jpg" alt="">
-//   <span>bilol_2704</span>
-// </div>
-// <div class="user__name">
-//   <img class="modal__right-img" src="img/scromny.jpg" alt="">
-//   <span>scromny_01</span>
-// </div>
-// <div class="user__name">
-//   <img class="modal__right-img" src="img/sattor.jpg" alt="">
-//   <span>abdusattor_ibroximov</span>
-// </div>
-// <div class="user__name">
-//   <img class="modal__right-img" src="img/bilol.jpg" alt="">
-//   <span>bilol_2704</span>
-// </div>
-// <div class="user__name">
-//   <img class="modal__right-img" src="img/scromny.jpg" alt="">
-//   <span>scromny_01</span>
-// </div>
-// <div class="user__name">
-//   <img class="modal__right-img" src="img/sattor.jpg" alt="">
-//   <span>abdusattor_ibroximov</span>
-// </div>
-// <div class="user__name">
-//   <img class="modal__right-img" src="img/bilol.jpg" alt="">
-//   <span>bilol_2704</span>
-// </div> <div class="user__name">
-//   <img class="modal__right-img" src="img/scromny.jpg" alt="">
-//   <span>scromny_01</span>
-// </div>
-// <div class="user__name">
-//   <img class="modal__right-img" src="img/sattor.jpg" alt="">
-//   <span>abdusattor_ibroximov</span>
-// </div>
-// <div class="user__name">
-//   <img class="modal__right-img" src="img/bilol.jpg" alt="">
-//   <span>bilol_2704</span>
-// </div>
-// <div class="user__name">
-//   <img class="modal__right-img" src="img/scromny.jpg" alt="">
-//   <span>scromny_01</span>
-// </div>
-// </div>`
-// modalRight.appendChild(div)
+    Rasm uchun @ibrohim_muhammad_84 akamga tashakkur izhor qilaman.
+    <a href="https://www.instagram.com/Yuksalish_leaders_academy/">@Yuksalish_Leaders_Academy
+    </a>
+  </p>
+</div>
+<div class="plus"><i class='bx bx-plus-circle' ></i></div>
+<div class="user__name">
+  <img class="modal__right-img" src="img/zabar.jpg" alt="">
+  <span>zabardastovna</span>
+</div>
+<div class="user__name">
+  <img class="modal__right-img" src="img/sattor.jpg" alt="">
+  <span>abdusattor_ibroximov</span>
+</div>
+<div class="user__name">
+  <img class="modal__right-img" src="img/bilol.jpg" alt="">
+  <span>bilol_2704</span>
+</div>
+<div class="user__name">
+  <img class="modal__right-img" src="img/scromny.jpg" alt="">
+  <span>scromny_01</span>
+</div>
+<div class="user__name">
+  <img class="modal__right-img" src="img/sattor.jpg" alt="">
+  <span>abdusattor_ibroximov</span>
+</div>
+<div class="user__name">
+  <img class="modal__right-img" src="img/bilol.jpg" alt="">
+  <span>bilol_2704</span>
+</div>
+<div class="user__name">
+  <img class="modal__right-img" src="img/scromny.jpg" alt="">
+  <span>scromny_01</span>
+</div>
+<div class="user__name">
+  <img class="modal__right-img" src="img/sattor.jpg" alt="">
+  <span>abdusattor_ibroximov</span>
+</div>
+<div class="user__name">
+  <img class="modal__right-img" src="img/bilol.jpg" alt="">
+  <span>bilol_2704</span>
+</div> <div class="user__name">
+  <img class="modal__right-img" src="img/scromny.jpg" alt="">
+  <span>scromny_01</span>
+</div>
+<div class="user__name">
+  <img class="modal__right-img" src="img/sattor.jpg" alt="">
+  <span>abdusattor_ibroximov</span>
+</div>
+<div class="user__name">
+  <img class="modal__right-img" src="img/bilol.jpg" alt="">
+  <span>bilol_2704</span>
+</div>
+<div class="user__name">
+  <img class="modal__right-img" src="img/scromny.jpg" alt="">
+  <span>scromny_01</span>
+</div>
+</div>`
+modalRight.appendChild(div)
